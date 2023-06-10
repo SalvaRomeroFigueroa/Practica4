@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Compra Peliculas en Linea</title>
+        <link rel="stylesheet" href="design.css">
+        <script type="text/javascript" src="javascript.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Interaccion</h1>
+            <div class="box">
+                <nav>
+                    <button id="volver" onclick="Inicio()">Volver</button>
+                </nav>
+            </div>
+        </header>
+        <br>
+        <div class="interact">
+            <div class="box">
+                <p>Detalles de contacto</p>
+                <form id="formulario">
+                    <input type="text" id="name" name="nombre" class="obligatorio" placeholder="Nombre" required><br>
+                    <input type="email" id="email" name="email" class="obligatorio" placeholder="Email" required><br>
+                    <input type="number" id="edad" name="edad" class="obligatorio" placeholder="Edad" min="0" max="100" required>
+                    <p>Pelicula</p>
+                    <select id="movie" name="movie" class="obligatorio" required>
+                        <option value="ATSV">Spider-Man: Across the Spiderverse</option>
+                        <option value="FF10">Rapidos y Furiosos 10</option>
+                        <option value="ROTB">Transformers: Rise of the Beasts</option>
+                        <option value="GOTG">Guardianes de la Galaxia: Volumen 3</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="extra[0]" name="extras[0]" value="tyc" required>Terminos y Condiciones<br>
+                    <input type="checkbox" id="extra[1]" name="extras[1]" value="warn" required>Confirmo que menores de 13 años veran la pelicula acompañados de un adulto.<br>
+                    <input type="checkbox" id="extra[2]" name="extras[2]" value="subs">Subscribirme para saber de Novedades y Ofertas<br>
+                    <br>
+                    <br>
+                    <input type="submit" id="send" value="Enviar">
+                    <input type="reset" id="send" value="Borrar">
+                    <div id="resultado"></div>
+                </form>
+                
+            </div>
+        </div>
+        <footer>
+            <p>La compra de cualquier producto puede ser realizada unicamente por la pagina de interacción, se reciben como medios de pago Tarjetas de Credito y Debito, Uala, Mercado Pago, Transerencia Bancaria, en Efectivo a través de sucursales de Pago Facil o Rapipago, o tambien invitando al Dueño a un Asado.</p>
+        </footer>
+    </body>
+</html>
